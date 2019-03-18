@@ -1,0 +1,15 @@
+let bodyColor = prompt("Какой будет фон у страницы?");
+document.body.style["background-color"] = bodyColor;
+let textColor = prompt("Какой будет цвет текста на странице?");
+let page = document.querySelector(".page");
+page.style["color"] = textColor;
+let inspiringPersonName = prompt("Как зовут человека, который вас вдохновляет?");
+let name = document.querySelector(".name");
+name.innerHTML = inspiringPersonName;
+let imageURL = prompt("Введите адрес картинки:");
+let image = document.querySelector("img");
+image.setAttribute("src", imageURL);
+let pageText = prompt("Введите текст страницы:");
+let shortBio = document.querySelector(".shortBio");
+shortBio.innerHTML = pageText;
+shortBio.className += " animated";
