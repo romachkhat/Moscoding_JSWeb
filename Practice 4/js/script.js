@@ -4,16 +4,22 @@ var closePopup = document.querySelector(".closePopup");
 var openMenu = document.querySelector(".openMenu");
 var menu = document.querySelector(".menu");
 var closeMenu = document.querySelector(".closeMenu");
+var overlay = document.querySelector(".overlay");
 
 requestButton.addEventListener("click", function() {
+	overlay.style.display = "block";
 	popup.style.display = "flex";
-  popup.style.opacity = "1";
 });
 
 closePopup.onclick = function() {
-  popup.style.display = "none";
-  popup.style.opacity = "0";
+	overlay.style.display = "none";
+	popup.style.display = "none";
 };
+
+overlay.onclick = function() {
+	overlay.style.display = "none";
+	popup.style.display = "none";
+}
 
 openMenu.onclick = () => {
 	menu.style.left = "0";
