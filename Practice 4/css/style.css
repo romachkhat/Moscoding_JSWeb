@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   transition: .5s;
+  z-index: 10;
 }
 
 .menu a {
@@ -48,10 +49,12 @@
   background-color: white;
   border: 2px solid navy;
   display: block;
-  margin: 20px auto;
+  margin: auto;
   font-size: 30px;
   cursor: pointer;
   color: navy;
+  position: relative;
+  top: 20px;
 }
 .request:hover {
   background-color: navy;

@@ -19,12 +19,19 @@ closePopup.onclick = function() {
 overlay.onclick = function() {
 	overlay.style.display = "none";
 	popup.style.display = "none";
+	if (menu.style.left == "0px") {
+		menu.style.left = "-50vw";
+	}
 }
 
-openMenu.onclick = () => {
+openMenu.onclick = function() {
+	overlay.style.display = "block";
 	menu.style.left = "0";
 };
 
-closeMenu.onclick = () => {
+closeMenu.onclick = function() {
 	menu.style.left = "-50vw";
+	if (overlay.style.display != "none") {
+		overlay.style.display = "none";
+	}
 };
