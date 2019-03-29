@@ -17,7 +17,7 @@ const headings = document.getElementsByTagName("h2");
 const prices = document.getElementsByTagName("p");
 const divs = document.querySelectorAll(".coin div");
 
-for (i = 0; i < crypto.length; i++) {
+for (let i = 0; i < crypto.length; i++) {
     headings[i].innerHTML = crypto[i].name;
     prices[i].innerHTML = crypto[i].price;
     divs[i].style.width = parseInt(crypto[i].price / 5) + "px";

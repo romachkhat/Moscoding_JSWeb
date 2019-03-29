@@ -9,8 +9,8 @@ let names = [
 	]
 ];
 
-for (n of names) {
-	for (i of n) {
+for (let n of names) {
+	for (let i of n) {
     		i.forEach(function(element) {
     			console.log(element);
     		});
